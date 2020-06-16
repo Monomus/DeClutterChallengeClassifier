@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 from sklearn.svm import LinearSVC
 
-svc = joblib.load('tree.pkl')
+svc = joblib.load('treeNew.pkl')
 
 df_test = pd.read_csv('test_results.csv')
 df_test_id = df_test

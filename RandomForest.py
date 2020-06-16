@@ -37,7 +37,7 @@ print("Training classifiers...")
 for i in range(0, args.runs):
     print("Model" + str(i))
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=args.split, random_state=rand.randint(1, 100))
-    model = RandomForestClassifier(n_estimators=100, max_depth=5)
+    model = RandomForestClassifier(n_estimators=3000, max_depth=11)
     model.fit(X_train, Y_train)
 
     y_pred_class = model.predict(X_test)
